@@ -1,0 +1,28 @@
+html, body {
+    overflow: hidden;
+    margin: 0px;
+    background: #1E2021;;
+}
+#msgBox{
+    display: flex;
+    flex-direction: column;
+    width:210px;
+    height:60px;
+    padding: 10px;
+    color: white;
+}
+.ip{
+    color: #BCDBEA;
+    font-size: 13px;
+}
+.msg{
+    font-size:20px;
+    background: rgba(216, 216, 216, 0.144);
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 180px;
+    height: 30px;
+    overflow: hidden;
+}

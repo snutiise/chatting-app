@@ -1,0 +1,69 @@
+.body{
+    overflow: hidden;
+}
+::-webkit-scrollbar {width: 8px; height: 8px; border: 3px solid #fff; }
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display:none;}
+::-webkit-scrollbar-track {background: #efefef; -webkit-border-radius: 10px; border-radius:10px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2)}
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(0,0,0,.2); -webkit-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1)}
+.chattingView-chatbox{
+    height: 600px;
+    width: 400px;
+    position:relative;
+    z-index: 1;
+    margin: auto;
+}
+.chattingView-chatbox:after{
+    z-index: -1;
+    background-repeat:no-repeat;
+    background: url('../../lovelyz.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    content:"";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter:alpha(opacity=30);
+}
+.chattingView-chat{
+    position: absolute;
+    bottom: 0px;
+    max-height: 600px;
+    padding-top: 10px;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+div.chattingView-header{
+    display: flex;
+}
+div.chattingView-header div:first-child{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div.chattingView-header div:last-child{
+    margin-top: 2px;
+    font-size:12px;
+}
+div.chattingView-msg{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 15px;
+    background: rgba(146, 146, 146, 0.301);
+    border-radius: 10px;
+    font-weight: bold;
+    max-width:380px;
+    overflow-wrap: break-word;
+    width: fit-content;
+}
+
+.chattingView-input{
+    display: flex;
+    margin: 3px auto;
+    width: 400px;
+}
