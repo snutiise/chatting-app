@@ -11,7 +11,7 @@ const ipcMain =electron.ipcMain;
 
 let mainWindow, child;
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 400, height: 760, icon: path.join(__dirname, 'icon.png')});
+  mainWindow = new BrowserWindow({width: 400, height: 750, icon: path.join(__dirname, 'icon.png')});
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'build/index.html'),
     protocol: 'file:',
